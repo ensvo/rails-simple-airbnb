@@ -1,5 +1,15 @@
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">🌠 Galaxy AirBnb</a>
+  </button>
+  <nav class="navbar navbar-light bg-light">
+	  <form class="form-inline">
+	    <button class="btn btn-light" type="button"><%= link_to 'Back', flats_path %></button>
+	  </form>
+	</nav>
+</nav>
+<!-- NAVBAR -->
 <div class="container mt-4">
 	<h1>List a new flat</h1>
 	<%= render 'flats/form' %>
-	<p><%= link_to 'Back to flats', flats_path, class: 'btn btn-light mt-4' %></p>
 </div>
