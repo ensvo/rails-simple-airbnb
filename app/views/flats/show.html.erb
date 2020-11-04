@@ -1,0 +1,15 @@
+<div class="container mt-4">
+	<div class="bg-light border p-2">
+		<h1 class="font-weight-bold"><%= @flat.name %></h1>
+		<p class="font-italic"><%= @flat.address %></p>
+	</div>
+	<div class="bg-light border p-2 mt-4">
+		<h2 class="font-weight-bold">Details</h2>
+		<p><%= @flat.description %></p>
+		<p>🧍<%= @flat.number_of_guests %></p>
+		<p>💸<%= @flat.price_per_night %></p>
+	</div>
+	<p><%= link_to 'Update', edit_flat_path(@flat) %></p>
+	<p><%= link_to 'Delete?', flat_path(@flat), method: :delete, data: { confirm: "Delete #{@flat.name}?" } %></p>
+	<p><%= link_to 'Back to flats', flats_path, class: 'btn btn-light mt-4' %></p>
+</div>
